@@ -1,0 +1,41 @@
+name: spicetify_v3
+description: Spicetify - A beautiful music player with dark purple theme
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.1.0
+  shared_preferences: ^2.3.0
+  provider: ^6.1.0
+  image_picker: ^1.1.2
+  flutter_launcher_icons: ^0.14.1
+  file_picker: 10.3.8
+  flutter_file_dialog: ^3.3.2
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.png"
+  adaptive_icon_background: "#B388FF"
+  adaptive_icon_foreground: "assets/icons/logo.png"
+  adaptive_icon_foreground_inset: 20
+  background_color: "#B388FF"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/icons/
